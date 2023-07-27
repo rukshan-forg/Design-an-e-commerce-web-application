@@ -1,12 +1,33 @@
-.nav-bg-color{
-      background-color: rgb(248, 225, 97);
+.nav-bg-color {
+      background-color: rgb(222, 168, 227);
 }
-.mouse-hand{
+.bg-color{
+      background-color: #3e195a;
+}
+
+.mouse-hand {
       cursor: pointer;
 }
-.display-inline{
+
+.display-inline {
       display: inline
 }
-.boder-redias{
+
+.boder-redias {
       border-radius: 15px;
+}
+.nav-a {
+      text-decoration: none;
+}
+.nav-a:hover {
+      text-decoration: underline;
+      color: #ffffff;
+}
+
+.name{
+      font-size: 30px;
+      font-weight: 800;
+}
+.text-decoration{
+      text-decoration:none;
 }
