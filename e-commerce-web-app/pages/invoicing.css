@@ -1,0 +1,17 @@
+body {
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      background-color: rgb(252, 248, 255);
+  }
+  .invoice-header {
+      text-align: center;
+      
+  }
+  .invoice-info {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+  }
+  
+  .invoice-total {
+      text-align: right;
+  }

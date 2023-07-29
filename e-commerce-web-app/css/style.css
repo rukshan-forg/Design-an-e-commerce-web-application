@@ -1,8 +1,9 @@
 .nav-bg-color {
       background-color: rgb(222, 168, 227);
 }
-.bg-color{
-      background-color: #3e195a;
+
+.bg-color {
+      background-color: #471f53;
 }
 
 .mouse-hand {
@@ -16,18 +17,64 @@
 .boder-redias {
       border-radius: 15px;
 }
-.nav-a {
-      text-decoration: none;
+.btn-bar1{
+      text-decoration:none;
+      color: inherit;
 }
+.nav-a{
+      text-decoration:none;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 18px;
+      color: white;
+      
+}            
 .nav-a:hover {
-      text-decoration: underline;
-      color: #ffffff;
+      text-decoration: none;
+      color: #ff6262;
 }
 
-.name{
+.name {
       font-size: 30px;
       font-weight: 800;
 }
+
 .text-decoration{
-      text-decoration:none;
+      text-decoration: none;
+}
+.items{
+      background-color: #f4edf7;
+      border-radius: 20px;
+      border: solid 1px rgb(179, 103, 209);
+}
+
+
+body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+}
+
+.sidebar {
+      position: fixed;
+      top: 0;
+      right: -350px;
+      width: 350px;
+      height: 100%;
+      background-color: rgb(46, 11, 53);
+      transition: right 0.3s ease-in-out;
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Courier New', Courier, monospace;
+}
+.sidebar.open {
+      right: 0;
+      
+}
+.navbar2 {
+      position: relative;
+      z-index: 1;
+}
+.sidebar {
+      z-index: 2;
 }
