@@ -6,8 +6,111 @@
       <link rel="stylesheet" href="../css/styles.css">
       <link rel="stylesheet" href="../css/bootstrap.css">
       <title>admin panel</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .admin-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .admin-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .admin-controls button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .admin-controls button:last-child {
+            background-color: #ff0000;
+        }
+
+        .admin-controls button:hover {
+            background-color: #45a049;
+        }
+
+        .admin-controls button:last-child:hover {
+            background-color: #cc0000;
+        }
+    </style>
 </head>
 <body>
+    <div class="admin-container">
+        <h1>Admin User Control</h1>
+        <table>
+            <tr>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Role</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>admin_user</td>
+                <td>admin@example.com</td>
+                <td>Admin</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>john_doe</td>
+                <td>john@example.com</td>
+                <td>User</td>
+            </tr>
+            <!-- Add more user rows here -->
+        </table>
+        <div class="admin-controls">
+            <button>Edit</button>
+            <button>Delete</button>
+        </div>
+    </div>
+
 
 
 
