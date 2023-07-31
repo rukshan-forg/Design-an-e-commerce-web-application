@@ -1,0 +1,28 @@
+.info h2 {
+  color: #007bff;
+}
+
+.info div {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.info p {
+  margin: 0;
+}
+
+.info table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.info table,td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.info th {
+  background-color: #3b3b3b;
+}

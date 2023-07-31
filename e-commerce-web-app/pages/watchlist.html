@@ -1,108 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="shortcut icon" href="../images/favicon/fevicon.jpg" type="image/x-icon">
-      <link rel="stylesheet" href="../css/styles.css">
-      <link rel="stylesheet" href="../css/bootstrap.css">
-      <title>watchlist</title>
-
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-.watchlist-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-h1 {
-    text-align: center;
-}
-
-.watchlist {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.watchlist-item {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.watchlist-item img {
-    width: 100px;
-    height: 100px;
-    margin-right: 10px;
-}
-
-.movie-info {
-    flex: 1;
-}
-
-.watchlist-item h3 {
-    margin: 0;
-}
-
-.watchlist-item p {
-    margin: 5px 0;
-}
-
-.watchlist-item button {
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.watchlist-item button:hover {
-    background-color: #cc0000;
-}
-
-</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../images/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="..//css/style.css">
+    <title>witchlist</title>
 </head>
+
 <body>
 
-    <div class="watchlist-container">
-        <h1>My Watchlist</h1>
-        <ul class="watchlist">
-            <li class="watchlist-item">
-                <img src="movie1.jpg" alt="Movie 1">
-                <div class="movie-info">
-                    <h3>Movie 1</h3>
-                    <p>Release Date: June 1, 2023</p>
-                    <p>Genre: Action</p>
+ <!--nav bar-->
+ <nav class="container-fluid bg-color">
+    <div class="p-1">
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3"><a href="../index.html">
+                        <img src="../images/logo/logo.png" alt="logo" width="100%" class=""></a>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-8 col-xl-9">
+                        <ul class="nav m-2">
+                            <li class="me-2"><a class="nav-a" href="../index.html">Home</a></li>
+                            <li class="me-2"><a class="nav-a" href="../index.html#about">Contact</a></li>
+                            <li class="me-2"><a class="nav-a" class="active" href="../index.html#about">About</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <button>Remove</button>
-            </li>
-            <li class="watchlist-item">
-                <img src="movie2.jpg" alt="Movie 2">
-                <div class="movie-info">
-                    <h3>Movie 2</h3>
-                    <p>Release Date: July 15, 2023</p>
-                    <p>Genre: Comedy</p>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+    <!--shoping cart-->
+    <div class="container mt-5">
+        <h1 class="title">WITCHLIST</h1>
+        <div class="item mt-3 row p-2">
+            <div class="img col-2">
+                <img src="../images/product/product01.png" width="100%" alt="item image">
+            </div>
+            <div class="datails col-7">
+                <div class="name">
+                    <b>laptop</b>
                 </div>
-                <button>Remove</button>
-            </li>
-            <!-- Add more watchlist items here -->
-        </ul>
+                <div class="description">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt nobis, rem illo adipisci ipsum soluta fugit numquam distinctio molestias delectus iusto non impedit maiores iure expedita, rerum officia dolorem!</p>   
+                </div>
+                <div class="price"><strong>price:</strong> LKR 100,000.00</div>
+                <div>29/07/2003</div>
+                <div><a href="../product_view/product1.html">view product</a></div>
+            </div>
+            <form class="col-1"><input class="checkbox-icon " type="checkbox" name="" id=""></form>
+            <button class="btn btn-danger col-2" type="button">remove</button>
+        </div>
+
+        <div class="item mt-3 row p-2">
+            <div class="img col-2">
+                <img src="../images/product/product02.png" width="100%" alt="item image">
+            </div>
+            <div class="datails col-7">
+                <div class="name">
+                    <b>laptop</b>
+                </div>
+                <div class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum tempora dolore, harum
+                       
+                </div>
+                <div class="price"><strong>price:</strong> LKR 100,000.00</div>
+                <div>29/07/2003</div>
+                <div><a href="../product_view/product1.html">view product</a></div>
+            </div>
+            <form class="col-1"><input class="checkbox-icon " type="checkbox" name="" id=""></form>
+            <button class="btn btn-danger col-2" type="button">remove</button>
+        </div>
+
+        <div class="item mt-3 row p-2">
+            <div class="img col-2">
+                <img src="../images/product/product03.png" width="100%" alt="item image">
+            </div>
+            <div class="datails col-7">
+                <div class="name">
+                    <b>laptop</b>
+                </div>
+                <div class="description">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum tempora dolore, harum
+                       
+                </div>
+                <div class="price"><strong>price:</strong> LKR 100,000.00</div>
+                <div>29/07/2003</div>
+                <div><a href="../product_view/product1.html">view product</a></div>
+            </div>
+            <form class="col-1"><input class="checkbox-icon " type="checkbox" name="" id=""></form>
+            <button class="btn btn-danger col-2" type="button">remove</button>
+        </div>
+
+        
+        <div class="row mt-4 buy">
+            <div class="button-container">
+                <button class="btn btn-info col-2">check all</button>
+                <button class="btn btn-success col-2">buy</button>
+            </div>
+        </div>
     </div>
 
-      
-      <script src="../js/script.js"></script>
+    <div class="row mt-5 footer">
+        <div class="col-4 offset-4">
+           <div>Copyright &copy; 2023 new tech.</div>
+        </div>
+     </div>
+
 </body>
+
 </html>

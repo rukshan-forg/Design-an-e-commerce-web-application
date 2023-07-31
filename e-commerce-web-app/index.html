@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/bootstrap.css" />
-  <title>Document</title>
+  <link rel="stylesheet" href="pages/cart.css">
+  <title>home</title>
 </head>
 
 <body>
@@ -19,17 +20,17 @@
       <br>
       <div class="col-12 offset-4 mb-5"><img src="images/icon/Account Icon.png" width="100" alt="account img"></div>
       <hr>
-      <div class="col-12 offset-2">name</div>
+      <div class="col-12 offset-1"><a class="a" href="#">name: fname lname</a></div>
       <hr>
-      <div class="col-12 offset-2">email</div>
+      <div class="col-12 offset-1"><a class="a" href="#">email: user@example.com</a></div>
       <hr>
-      <div class="col-12 offset-2">phone</div>
+      <div class="col-12 offset-1"><a class="a" href="#">phone: 07x xx xx xxx</a></div>
       <hr>
-      <div class="col-12 offset-2">settings</div>
+      <div class="col-12 offset-1"><a class="a" href="#">settings</a></div>
       <hr>
-      <div class="col-12 offset-2">perches histry</div>
+      <div class="col-12 offset-1"><a class="a" href="pages/purchase_history.html">perches histry</a></div>
       <hr>
-      <div class="col-12 offset-2">other</div>
+      <div class="col-12 offset-1"><a class="a" href="#">other</a></div>
       <hr>
     </div>
   </div>
@@ -49,29 +50,132 @@
             </div>
             <div class="col-sm-12 col-md-6 col-lg-8 col-xl-9">
               <ul class="nav m-2">
-                <li class="me-2"><a class="nav-a" href="index.html">Home</a></li>
-                <li class="me-2"><a class="nav-a" href="index.html#about">Contact</a></li>
-                <li class="me-2"><a class="nav-a" href="#news">invoicing</a></li>
-                <li class="me-2"><a class="nav-a" href="#contact">perches histry</a></li>
-                <li class="me-2"><a class="nav-a" href="#news">Advanced-seaech</a></li>
-                <li class="me-2"><a class="nav-a" class="active" href="index.html#about">About</a></li>
+                <li class="me-2"><a class="a" href="index.html">Home</a></li>
+                <li class="me-2"><a class="a" href="index.html#about">Contact</a></li>
+                <li class="me-2"><a class="a" href="#news">
+                    <div class="Advanced-seaech" id="Advanced-seaech">
+                      Advanced-seaech&blacktriangledown;
+                    </div>
+
+                  </a></li>
+                <li class="me-2"><a class="a" class="active" href="index.html#about">About</a></li>
               </ul>
             </div>
           </div>
         </div>
 
-        <div class="col-6 ali">
+        <div class="col-6 ">
           <div class="row">
             <div class="col"></div>
-            <button class="btn btn-outline-light col-sm-3 col-lg-2 m-1"><a href="pages/signup.html" class="btn-bar1">signup</a></button>
-            <button class="btn btn-outline-light col-sm-3 col-lg-2 m-1"><a href="pages/login.html" class="btn-bar1">login</a></button>
-            <button class="btn btn-outline-light col-sm-3 col-lg-2 m-1" id="openSidebar">user</button>
+            <button class="btn btn-outline-light col-sm-3 col-lg-2 m-auto"><a href="pages/signup.html"
+                class="btn-bar1">signup</a></button>
+            <button class="btn btn-outline-light col-sm-3 col-lg-2 m-auto"><a href="pages/login.html"
+                class="btn-bar1">login</a></button>
+            <button class="btn btn-outline-light col-sm-3 col-lg-2 m-auto" id="openSidebar">user</button>
           </div>
         </div>
 
       </div>
     </div>
   </nav>
+
+
+
+
+
+
+
+  <!--Advanced-seaech-dropdown-bar-->
+  <div class="container mt-4">
+    <div class="Advanced-seaech-dropdown" id="Advanced-seaech-dropdown">
+      <div class="">
+
+        <div class="advanced-search search-form-container ">
+          <form class="search-form ">
+            <div class="oneline">
+              <label for="keyword">
+                <h3>keyword</h3>
+              </label>
+              <input type="text" name="keyword" placeholder="Search by keyword" />
+            </div>
+            <div class="oneline">
+              <label for="min-price">
+                <h3>Price</h3>
+              </label>
+              <label for="min-price">
+                <h4>Min</h4>
+              </label>
+              <input type="number" name="min-price" id="min-price" placeholder="100" />
+
+              <label for="max-price">
+                <h4>Max</h4>
+              </label>
+              <input type="number" name="max-price" id="max-price" placeholder="100000" />
+            </div>
+            <div class="oneline">
+              <label for="color">
+                <h3>Color</h3>
+              </label>
+              <select name="color" id="color">
+                <option value="">Any</option>
+                <option value="">black</option>
+                <option value="">white</option>
+                <option value="">red</option>
+                <option value="">blue</option>
+
+              </select>
+            </div>
+            <div class="oneline">
+              <label for="category">
+                <h3>Category</h3>
+              </label>
+              <select name="category" id="category">
+                <option value="">Any</option>
+                <option value="">laptop</option>
+                <option value="">mobile</option>
+                <option value="">camara</option>
+                <option value="">hedset</option>
+                <option value="">tablet</option>
+              </select>
+            </div>
+
+            <div class="oneline">
+              <label for="free-shipping">
+                <h3>Free Shipping</h3>
+              </label>
+              <input type="checkbox" name="free-shipping" id="free-shipping" />
+            </div>
+            <div class="oneline">
+              <label for="discount">
+                <h3>Discount</h3>
+              </label>
+              <input type="checkbox" name="discount" id="discount" />
+            </div>
+
+            <div class="oneline">
+              <label for="store-by">
+                <h3>Store By</h3>
+              </label>
+              <select name="store-by" id="store-by">
+                <option value="">Any</option>
+                <option value="top-rated">Top Rated</option>
+                <option value="popular">Popular</option>
+              </select>
+            </div>
+            <div class="oneline">
+              <label for="warranty">
+                <h3>Warranty</h3>
+              </label>
+              <input type="checkbox" name="warranty" id="warranty" />
+
+            </div>
+            <input class="btn btn-info" type="submit" value="Search" />
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <!--nav bar 2-->
   <div class="container pt-2 navbar2">
@@ -86,14 +190,86 @@
         <div>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <img class="mouse-hand me-3" src="images/icon/search.svg" alt="search icon" width="30" />
-            <img class="mouse-hand me-3" src="images/icon/wish list.svg" alt="shopping-cart" width="30" />
-            <img class="mouse-hand" src="images/icon/shopping-cart.svg" alt="shopping-cart" width="30" />
+            <img class="mouse-hand me-3 wish-list" src="images/icon/search.svg" alt="wish list" width="30" />
+            <a href="pages/watchlist.html"><img class="mouse-hand me-3 search-icon" src="images/icon/wish list.svg" alt="search icon" width="30" /></a> 
+            <img class="mouse-hand shoping-cart-icon" id="shoping-cart-icon" src="images/icon/shopping-cart.svg" alt="shopping-cart" width="30" />
           </form>
         </div>
       </div>
     </nav>
   </div>
+
+
+  <!--shoping cart dropdown bar-->
+  <div class="shoping-cart" id="shoping-cart">
+    <div class="container mt-5">
+      <div class="item mt-3 row p-2">
+        <div class="img col-2">
+          <img src="images/product/product01.png" width="100%" alt="item image">
+        </div>
+        <div class="datails col-7">
+          <div class="name">
+            <b>laptop</b>
+          </div>
+          <div class="description">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil incidunt nobis, rem illo adipisci ipsum
+              soluta fugit numquam distinctio molestias delectus iusto non impedit maiores iure expedita, rerum officia
+              dolorem!</p>
+          </div>
+          <div class="price"><strong>price:</strong> LKR 100,000.00</div>
+        </div>
+        <form class="col-1"><input class="checkbox-icon " type="checkbox" name="" id=""></form>
+        <button class="btn btn-danger col-2" type="button">remove</button>
+      </div>
+
+      <div class="item mt-3 row p-2">
+        <div class="img col-2">
+          <img src="images/product/product02.png" width="100%" alt="item image">
+        </div>
+        <div class="datails col-7">
+          <div class="name">
+            <b>laptop</b>
+          </div>
+          <div class="description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum tempora dolore, harum
+
+          </div>
+          <div class="price"><strong>price:</strong> LKR 100,000.00</div>
+        </div>
+        <form class="col-1"><input class="checkbox-icon " type="checkbox" name="" id=""></form>
+        <button class="btn btn-danger col-2" type="button">remove</button>
+      </div>
+
+      <div class="item mt-3 row p-2">
+        <div class="img col-2">
+          <img src="images/product/product03.png" width="100%" alt="item image">
+        </div>
+        <div class="datails col-7">
+          <div class="name">
+            <b>laptop</b>
+          </div>
+          <div class="description">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatum tempora dolore, harum
+
+          </div>
+          <div class="price"><strong>price:</strong> LKR 100,000.00</div>
+        </div>
+        <form class="col-1"><input class="checkbox-icon " type="checkbox" name="" id=""></form>
+        <button class="btn btn-danger col-2" type="button">remove</button>
+      </div>
+
+
+      <div class="row mt-4 buy mb-5">
+        <div class="button-container">
+          <button class="btn btn-info col-2">check all</button>
+          <button class="btn btn-success col-2">buy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 
   <!--Product listing-->
   <div class="container mt-5">
@@ -102,182 +278,200 @@
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/product01.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 1</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/product02.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 2</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/product03.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 3</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/product04.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 4</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/product05.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 5</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/product06.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 6</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/product07.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 7</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/product08.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 8</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/product09.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 9</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/shop01.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 10</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/shop02.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 11</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
-
       <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
         <div class="p-5 items">
           <img src="images/product/shop03.png" alt="product" width="100%">
-          <div class="name">name: laptop</div>
-          <div class="fs-5">price: LKR 300,000</div>
-          <div class="fs-5">scor: 7/10</div>
+          <div class="name">name: Product 12</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
           <div class="row">
-            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="#">view product </a></button>
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
           </div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
           <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
-          <div class="row"><button class="btn btn-outline-success col m-2">buy</button></div>
         </div>
       </div>
+      <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
+        <div class="p-5 items">
+          <img src="images/product/product01.png" alt="product" width="100%">
+          <div class="name">name: Product 13</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
+          <div class="row">
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
+          </div>
+          <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
+          <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
+        <div class="p-5 items">
+          <img src="images/product/product02.png" alt="product" width="100%">
+          <div class="name">name: Product 14</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
+          <div class="row">
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
+          </div>
+          <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
+          <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6 col-xxl-4 p-3 ">
+        <div class="p-5 items">
+          <img src="images/product/product03.png" alt="product" width="100%">
+          <div class="name">name: Product 15</div>
+          <div class="fs-5">price: LKR XXXX.XX</div>
+          <div class="fs-5">Average rating &#10029;&#10029;&#10029;&#10029;&#10025;</div>
+          <div class="row">
+            <button class="btn btn-outline-info col m-2"><a class="text-decoration" href="product_view/product1.html">view product </a></button>
+          </div>
+          <div class="row"><button class="btn btn-outline-danger col m-2">add to cart</button></div>
+          <div class="row"><button class="btn btn-outline-danger col m-2">add to whish list</button></div>
+        </div>
+      </div>
+    
+
 
     </div>
   </div>
@@ -305,36 +499,37 @@
             eius consectetur assumenda autem inventore totam exercitationem sunt, quo quibusdam neque in vero sint illo?
           </p>
           <ul>
-            <li class="mt-2">26/3, Raymond Road</li>
-            <li class="mt-2">newtech@email.com</li>
-            <li class="mt-2">+091-32-85-787</li>
+            <li class="mt-2"><a class="a" href="">26/3, Raymond Road</a></li>
+            <li class="mt-2"><a class="a" href="">newtech@email.com</a></li>
+            <li class="mt-2"><a class="a" href="">+091-32-85-787</a></li>
           </ul>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
           <h1>CATEGORIES</h1>
           <ul>
-            <li class="mt-2">laptops</li>
-            <li class="mt-2">smartphones</li>
-            <li class="mt-2">cameras</li>
-            <li class="mt-2">accessorie</li>
-            <li class="mt-2">hedphones</li>
+            <li class="mt-2"><a class="a" href="">laptops</a></li>
+            <li class="mt-2"><a class="a" href="">smartphones</a></li>
+            <li class="mt-2"><a class="a" href="">cameras</a></li>
+            <li class="mt-2"><a class="a" href="">accessorie</a></li>
+            <li class="mt-2"><a class="a" href="">hedphones</a></li>
           </ul>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
           <H1>INFORMATION</H1>
           <ul>
-            <li class="mt-2">Privacy Policy</li>
-            <li class="mt-2">Orders and Returns</li>
-            <li class="mt-2">Terms & Conditions</li>
+            <li class="mt-2"><a class="a" href="">Privacy Policy</a></li>
+            <li class="mt-2"><a class="a" href="">Orders and Returns</a></li>
+            <li class="mt-2"><a class="a" href="">Terms & Conditions</a></li>
           </ul>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-3">
           <h1>ADMIN</h1>
           <UL>
-            <li class="mt-2">Admin Sign in</li>
-            <li class="mt-2">Product adding and updating</li>
-            <li class="mt-2">Admin Panel</li>
-            <li class="mt-2">Manage Products and Manage Users</li>
+            <li class="mt-2"><a class="a" href="pages/login.html">Admin Sign in</a></li>
+            <li class="mt-2"><a class="a" href="pages/product add and update.html">Add Product or Updare</a></li>
+            <li class="mt-2"><a class="a" href="pages/admin_panel.html">Admin Panel</a></li>
+            <li class="mt-2"><a class="a" href="pages/admin_mannage_product.html">Manage Products</a></li>
+            <li class="mt-2"><a class="a" href="pages/admin_manage_user.html">Manage user</a></li>
         </div>
       </div>
       <div class="row">
