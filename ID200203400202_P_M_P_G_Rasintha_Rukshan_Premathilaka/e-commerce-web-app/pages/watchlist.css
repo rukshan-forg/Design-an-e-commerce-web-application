@@ -1,0 +1,57 @@
+.watchlist-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+  }
+  
+  h1 {
+      text-align: center;
+  }
+  
+  .watchlist {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+  }
+  
+  .watchlist-item {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+  }
+  
+  .watchlist-item img {
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+  }
+  
+  .movie-info {
+      flex: 1;
+  }
+  
+  .watchlist-item h3 {
+      margin: 0;
+  }
+  
+  .watchlist-item p {
+      margin: 5px 0;
+  }
+  
+  .watchlist-item button {
+      background-color: #ff0000;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      cursor: pointer;
+  }
+  
+  .watchlist-item button:hover {
+      background-color: #cc0000;
+  }

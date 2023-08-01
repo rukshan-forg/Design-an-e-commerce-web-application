@@ -1,0 +1,24 @@
+.item {
+      display: flex;
+      align-items: center;
+      background-color: rgb(244, 226, 250);
+      border-radius: 30px;
+      font-size: 15px;
+}
+.button-container {
+        text-align: right;
+}
+.img{
+      border-radius: 25px;
+      background-color: rgb(253, 251, 254);
+}
+.footer{
+      background-color: rgb(70, 26, 98);
+      color: #ffffff;
+      padding: 20px;
+}
+.title{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-align: center;
+}
+

@@ -1,0 +1,37 @@
+body {
+      font-family: Arial, sans-serif;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #e5bafc;
+    }
+    .img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+    .invoice-btn {
+      width: 100%;
+      background-color: #17a61c;
+      border: none;
+      color: white;
+      padding: 8px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .invoice-btn:hover{
+      background-color: #64f869;
+    }
+
+    

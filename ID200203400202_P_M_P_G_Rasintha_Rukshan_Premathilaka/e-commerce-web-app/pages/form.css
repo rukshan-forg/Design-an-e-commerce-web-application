@@ -1,0 +1,55 @@
+.form-container {
+      border: solid;
+      width: 100%;
+      max-width: 600px;
+      margin: 200px auto;
+      padding: 25px;
+      background-color: #f9ebff;
+      border: 2px solid #973ab4;
+      border-radius: 15px;
+}
+
+.title {
+      text-align: center;
+      font-size: 35px;
+      font-family: Arial, sans-serif;
+      font-weight: 700;
+      color: #8e00b9;
+}
+
+label {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      
+}
+
+input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 2px solid #8c39a8;
+      border-radius: 10px;
+      box-sizing: border-box;
+}
+
+button {
+      width: 100%;
+      background-color: #8325b2;
+      color: #fff;
+      padding: 10px;
+      border: 1px solid rgb(125, 46, 174);
+      cursor: pointer;
+}
+button:hover{
+      background-color: #954fb6;
+}
+.forger-password{
+      text-align: right;
+}
+
+.new-account {
+      text-align: center;
+      font-weight: 500;
+}
+

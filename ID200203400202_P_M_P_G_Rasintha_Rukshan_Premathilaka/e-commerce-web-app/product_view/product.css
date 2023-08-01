@@ -1,0 +1,43 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+}
+
+header {
+      background-color: #3c264b;
+      color: #fff;
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+
+.product-image {
+      background-color: #faf3ff;
+      border: 1px solid #3c264b;
+      border-radius: 50px;
+}
+
+.product-image img {
+      max-width: 100%;
+}
+
+.product-details {
+      max-width: 400px;
+}
+
+.product-details h2 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+}
+
+.product-details ul {
+      list-style-type: none;
+      padding: 0;
+}
+
+.product-details ul li {
+      margin-bottom: 0.5rem;
+}
